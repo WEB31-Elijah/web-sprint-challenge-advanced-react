@@ -27,10 +27,10 @@ test("form shows success message on submit with form details", () => {
   fireEvent.change(getByLabelText(/state/i), { target: { value: "georgia" } });
   fireEvent.change(getByLabelText(/zip/i), { target: { value: "12345" } });
 
-  //   const checkoutButton = getByTestId("check");
-  //   fireEvent.click(checkoutButton);
+  const checkoutButton = getByTestId("check");
+  fireEvent.click(checkoutButton);
 
-  //   findAllByText(/elijah/i);
+  findAllByText(/elijah/i);
 
   //   expect(getByTestId("successMessage")).toBeInTheDocument();
 });
